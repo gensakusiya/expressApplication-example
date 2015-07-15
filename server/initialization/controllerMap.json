@@ -1,0 +1,28 @@
+{
+    "routers": [
+        {
+            "name": "/",
+            "controller": "home",
+            "httpRequest": "get",
+            "isNamespace": true,
+            "namespaces": [
+                {
+                    "name": "",
+                    "action": "index",
+                    "httpRequest": "get"
+                },
+                {
+                    "name": "add",
+                    "action": "add",
+                    "httpRequest": "post"
+                }
+            ]
+        },
+        {
+            "name": "/list",
+            "controller": "list",
+            "action": "list",
+            "httpRequest": "get"
+        }
+    ]
+}
